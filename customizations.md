@@ -3,6 +3,7 @@
 ## Environment Variables (.env.example)
 
 `WORKSPACE_INSTALL_MYSQL_CLIENT=true`
+`PHP_VERSION=7.4`
 
 ## Enable HTTPS
 
