@@ -1,8 +1,7 @@
 # My Customizations
 
-## Environment Variables
+## Environment Variables (.env.example)
 
-`cp .env.example .env`
 `WORKSPACE_INSTALL_MYSQL_CLIENT=true`
 
 ## Enable HTTPS
