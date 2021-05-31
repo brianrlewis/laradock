@@ -411,9 +411,7 @@ services:
       networks:
         - frontend
         - backend
-      environment:
-        APP_URL: 'https://${NGINX_APP_DOMAIN}:${NGINX_HOST_HTTPS_PORT}'
-
+        
 ### Blackfire ########################################
     blackfire:
       image: blackfire/blackfire
