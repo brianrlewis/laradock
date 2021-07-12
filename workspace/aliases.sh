@@ -114,6 +114,13 @@ alias gbr="git branch"
 alias gc="git commit"
 alias gck="git checkout"
 
+# My Custom Aliases
+alias vl="vapor login"
+alias vdp="vapor deploy production"
+alias vds="vapor deploy staging"
+alias sd="php artisan schema:dump"
+alias sda="php artisan schema:dump-all"
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$@"
