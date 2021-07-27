@@ -1,26 +1,22 @@
 # My Customizations
 
-## Environment Variables
+## Environment Variables (.env.example)
 
-`cp .env.example .env`
 `WORKSPACE_INSTALL_MYSQL_CLIENT=true`
+`PHP_VERSION=7.4`
 
 ## Enable HTTPS
 
-Open the following file and uncomment the HTTPS section
-
-laradock/nginx/sites/default.conf
+Open `laradock/nginx/sites/default.conf` and uncomment the HTTPS section
 
 ## Enable Horizon
 
 `cd laravel-horizon/supervisord.d`
 `cp laravel-horizon.conf.example laravel-horizon.conf`
+Update `laravel-horizon/supervisord.d/.gitignore` to exempt conf file
 
 ## Enable Scheduler
 
 `cd php-worker/supervisord.d`
 `cp laravel-scheduler.conf.example laravel-scheduler.conf`
-
-# Startup Command
-
-`docker-compose up nginx mysql redis laravel-horizon php-worker`
+Update `php-worker/supervisord.d/.gitignore` to exempt conf file
